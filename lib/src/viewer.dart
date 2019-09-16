@@ -145,16 +145,16 @@ class _PDFViewerState extends State<PDFViewer> {
               child: new Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  Expanded(
-                    child: IconButton(
-                      icon: Icon(Icons.first_page),
-                      tooltip: widget.tooltip.first,
-                      onPressed: () {
-                        _pageNumber = 1;
-                        _loadPage();
-                      },
-                    ),
-                  ),
+                  // Expanded(
+                  //   child: IconButton(
+                  //     icon: Icon(Icons.first_page),
+                  //     tooltip: widget.tooltip.first,
+                  //     onPressed: () {
+                  //       _pageNumber = 1;
+                  //       _loadPage();
+                  //     },
+                  //   ),
+                  // ),
                   Expanded(
                     child: IconButton(
                       icon: Icon(Icons.chevron_left),
@@ -184,16 +184,16 @@ class _PDFViewerState extends State<PDFViewer> {
                       },
                     ),
                   ),
-                  Expanded(
-                    child: IconButton(
-                      icon: Icon(Icons.last_page),
-                      tooltip: widget.tooltip.last,
-                      onPressed: () {
-                        _pageNumber = widget.document.count;
-                        _loadPage();
-                      },
-                    ),
-                  ),
+                  // Expanded(
+                  //   child: IconButton(
+                  //     icon: Icon(Icons.last_page),
+                  //     tooltip: widget.tooltip.last,
+                  //     onPressed: () {
+                  //       _pageNumber = widget.document.count;
+                  //       _loadPage();
+                  //     },
+                  //   ),
+                  // ),
                 ],
               ),
             )
